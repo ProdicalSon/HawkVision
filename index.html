@@ -3,28 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hawk Vision</title>
   <link rel="stylesheet" href="styles.css">
+  <title>Hawk Vision</title>
+ 
 </head>
 <body>
   <header>
     <h1>Hawk Vision</h1>
-    <nav>
-      <ul>
-        <li><a href="data/home.html" data-page="home">Home</a></li>
-        <li><a href="#" data-page="drought">Drought</a></li>
-        <li><a href="#" data-page="deforestation">Deforestation</a></li>
-        <li><a href="#" data-page="contacts">Contacts</a></li>
-        <li><a href="#" data-page="login">Login</a></li>
-      </ul>
-    </nav>
   </header>
-  <main id="content">
-    <!-- Dynamic content will be loaded here -->
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#search">Search</a>
+    <a href="#drought">Drought</a>
+    <a href="#deforestation">Deforestation</a>
+    <a href="#contacts">Contacts</a>
+    <a href="#login">Login</a>
+    <a href="#register">Register</a>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>About Us</h2>
+      <p><strong>"Look Before You Leap."</strong><br>At Hawk Vision, we aim to solve the challenges of drought and deforestation using AI.</p>
+      <p>Our mission is to preserve biodiversity, combat climate change, and promote responsible resource management by integrating cutting-edge technology, community engagement, and ecological research.</p>
+      <p>Explore more to find out how we contribute to a greener and more resilient planet.</p>
+    </section>
+
+    <section id="search">
+      <h2>Search Next Area to Plant Trees</h2>
+      <p>Use our AI-powered tools to locate deforested areas that need immediate attention.</p>
+      <button>Check for Deforested Areas</button>
+    </section>
+
+    <section id="drought">
+      <h2>Areas That Need Food Security</h2>
+      <div class="report-list">
+        <ul>
+          <li><span>Garissa</span></li>
+          <li><span>Wajir</span></li>
+          <li><span>Turkana</span></li>
+          <li><span>Dadaab Camp</span></li>
+          <li><span>Kitui</span></li>
+        </ul>
+      </div>
+      <div class="drought-details">
+        <p>Solving food insecurity in Turkana County requires a focus on water access, climate-smart agriculture, and improved food distribution. Investing in solar-powered boreholes, drip irrigation, and water harvesting systems can ensure year-round farming despite drought conditions.</p>
+        <p>Additionally, introducing drought-resistant crops like sorghum and millet, alongside innovative techniques such as hydroponics and vertical farming, can enhance local food production. Encouraging camel rearing and insect farming provides alternative protein sources, reducing reliance on cattle, which struggle in arid conditions.</p>
+        <p>To improve food storage and accessibility, Turkana needs solar-powered cold storage units and community food banks to reduce post-harvest losses. Strengthening road networks and blockchain-based food tracking can improve supply chains and prevent food aid corruption.</p>
+        <p>The government and private sector should invest in agri-tech solutions, such as mobile apps to educate farmers and provide market insights. By integrating sustainable water management, resilient agriculture, and smart food distribution, Turkana can move toward long-term food security and self-sufficiency.</p>
+      </div>
+    </section>
+
+    <section id="deforestation">
+      <h2>Areas That Need Reforestation</h2>
+      <div class="report-list">
+        <ul>
+          <li><span>Ol Jogi, Nanyuki</span></li>
+          <li><span>Ewaso Ngiro</span></li>
+          <li><span>Narok Town</span></li>
+          <li><span>South Kitui</span></li>
+          <li><span>Meru North</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:info@hawkvision.ai">info@hawkvision.ai</a></p>
+      <p>Phone: +254 700 123 456</p>
+      <p>Follow us on social media:</p>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </section>
+
+    <section id="login">
+      <h2>Login</h2>
+      <form class="register-form">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#register">Register</a></p>
+    </section>
+
+    <section id="register">
+      <h2>Register</h2>
+      <form class="register-form">
+        <input type="text" placeholder="Name" required>
+        <input type="text" placeholder="Organization" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+      </form>
+    </section>
   </main>
+
   <footer>
     <p>&copy; 2025 Hawk Vision. All rights reserved.</p>
   </footer>
-  <script src="js/app.js"></script>
 </body>
 </html>
